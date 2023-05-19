@@ -2,14 +2,14 @@
 A website to display and rotate added molecule SDF files. C library, python server and HTML/jQuery/CSS code built and incorporated together. 
 As of 05/2023, some bugs in molecule uploading still being fixed. 
 
-#To compile
+# To compile
 * export LD_LIBRARY_PATH=.
 * make
 
-#To run
+# To run
 * python3 server.py 53333
 
-#Dependencies
+# Dependencies
 * Swig
 * Python 3
 * C99 or newer
