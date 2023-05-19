@@ -10,7 +10,7 @@ As of 05/2023, some bugs in molecule uploading still being fixed.
 * python3 server.py 53333
 
 # Dependencies
-* Swig
+* Swig 3
 * Python 3
 * C99 or newer
 
