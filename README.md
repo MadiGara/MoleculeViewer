@@ -13,5 +13,6 @@ As of 05/2023, some bugs in molecule uploading still being fixed.
 * Swig 3
 * Python 3
 * C99 or newer
+* SQLITE 3
 
 Only official molecule sdf files can be uploaded. All paths included in the makefile are meant to be run on the UofG server, and need to be changed to run on a local device.
