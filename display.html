@@ -1,0 +1,24 @@
+<h1> Display Molecule </h1>
+<p>
+    <label for="axis"> Rotate around chosen axis </label>
+    <!-- create drop down list of axis choices -->
+    <select name="axis" id="axis">
+        <option value="x"> X </option>
+        <option value="y"> Y </option>
+        <option value="z"> Z </option>
+    </select>
+    <input type="number" name="degrees" id="degrees"/>
+    <!-- calls rotate in display.js -->
+    <button onclick="rotate()"> Rotate </button>
+</p>
+
+<div class="horizontal center">
+    <p>
+        <button onclick="window.location.href = 'elements.html';"> Home </button>
+    </p>
+    <p>or</p>
+    <p>
+        <button onclick="window.location.href = 'molecule.html';"> Upload/Display Molecule </button>
+    </p>
+    <div style="width: 40%;"></div>
+</div>

@@ -1,0 +1,42 @@
+<body>
+    <h1> Select Molecule </h1>
+    <p>
+        <button onclick="window.location.href = 'elements.html';"> Home </button>
+    </p>
+
+    <!-- file upload via form -->
+    <h2> File Upload </h2>
+    <form action="molecule.html" enctype="multipart/form-data" method="post">
+        <p> Name: <input type="text" name="filename"/> </p>
+        <p> <input type="file" accept=".sdf" name="sdffile"/> </p>
+        <p> <input type="submit" value="Upload Molecule"/> </p>
+    </form>
+
+    <h2> Current Molecule List </h2>
+    <p> Select a molecule from these to display it on a new page </p>
+    <table id="molecule_table">
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Number of Atoms </th>
+                <th> Number of Bonds </th>
+                <th> Action </th>
+            </tr>
+        </thead>
+        <tbody id="mol_body">
+            <tr>
+                <td class="left"> Who </td>
+                <td> One </td>
+                <td> Two </td>
+                <td>
+                    <form action="display" method="post" enctype="multipart/form-data">
+                        <input hidden value="mol_name"/>
+                        <button> Display </button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- add svg display window here -->
+    <div id="svg_window"></div>
+</body>
