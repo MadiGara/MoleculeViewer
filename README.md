@@ -1,6 +1,5 @@
 # MoleculeViewer
 A website to display and rotate added molecule SDF files. C library, python server, SQL database, and HTML/jQuery/CSS code built and incorporated together. 
-As of 05/2023, some bugs in molecule uploading still being fixed. 
 
 # To compile
 * export LD_LIBRARY_PATH=.
