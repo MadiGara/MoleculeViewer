@@ -1,0 +1,92 @@
+body {
+    max-width: 1400px;
+    /* horizontally center element within container */
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    display: flex;
+    /* top to bottom display */
+    flex-direction: column;
+}
+
+/* media rules for screens of different types (sizes) */
+@media (max-width: 400px) {
+    body {
+        padding: auto;
+    }
+}
+
+@media (min-width: 401px) {
+    body {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/* set size for a tags and url class (so urls) */
+a, .url {
+    font-size: 1.1em;
+}
+
+h3 {
+    padding-left: 20px;
+    white-space: nowrap;
+}
+
+h4 {
+    padding-left: 30px;
+}
+
+button, input {
+    font-size: 1.1em;
+}
+
+/* align table columns (headers and data) */
+th, td {
+    max-width: 1200px;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+/* for sample colour display after selection */
+.colour_box {
+    height: 1em;
+    width: 1em;
+    align-self: center;
+}
+
+/* single child rule for div'd table data */
+td>div {
+    display: flex;
+    flex-direction: row;
+}
+
+/* double child rule */
+td>div>div {
+    padding-left: 0.5 em;
+}
+
+/* directional flexbox alignments by class */
+.horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left {
+    /* start is at left */
+    align-items: flex-start;
+}
